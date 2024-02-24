@@ -506,6 +506,11 @@ h4 {
   line-height: 130%;
 }
 
+h5 {
+  font-size: 22px;
+  line-height: 130%;
+}
+
 .sub-1 {
   font-size: 24px;
   line-height: 130%;
@@ -1036,6 +1041,41 @@ li {
   opacity: 1;
   visibility: visible;
   transform: translate(-50%, -50%) scale(1);
+}
+
+.jr-travel-item {
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.08);
+  padding: 20px;
+  border-radius: 10px;
+}
+.jr-travel-item .img-box {
+  border-radius: 10px;
+}
+.jr-travel-item .img-box img {
+  border-radius: 10px;
+}
+.jr-travel-item .jr-card-content h5 a {
+  font-size: 22px;
+  font-weight: 600;
+  color: #000;
+  transition: all 0.3s;
+}
+.jr-travel-item .jr-card-content h5 a:hover {
+  color: #63ab45;
+}
+
+.tour-palace-menu {
+  display: flex;
+  gap: 40px;
+}
+.tour-palace-menu li {
+  position: relative;
+}
+.tour-palace-menu li::after {
+  position: relative;
+  content: "\ea6c";
+  font-family: "remixicon";
+  color: red;
 }
 
 /*# sourceMappingURL=style.css.map */

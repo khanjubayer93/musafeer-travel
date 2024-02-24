@@ -576,3 +576,50 @@
 
     }
 }
+
+.jr-travel-item{
+    box-shadow: 0 0 10px 0 rgba(0,0,0,.08);
+    padding: 20px;
+    border-radius: 10px;
+    .img-box{
+        border-radius: 10px;
+        img{
+            border-radius: 10px;
+        }
+    }
+    .jr-card-content{
+        h5{
+            a{
+                font-size: 22px;
+                font-weight: 600;
+                color: $color-balck;
+                transition: all 0.3s;
+
+                &:hover{
+                    color: $color-primary;
+                }
+            }
+        }
+    }
+}
+
+.tour-palace-menu{
+    display: flex;
+    gap: 40px;
+
+    li{
+        position: relative;
+
+        &::after{
+            position: relative;
+            content: "\ea6c";
+            font-family: 'remixicon';
+            color: red;
+
+        }
+    }
+
+    .place-link{
+
+    }
+}
