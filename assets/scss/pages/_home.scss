@@ -581,13 +581,16 @@
     box-shadow: 0 0 10px 0 rgba(0,0,0,.08);
     padding: 20px;
     border-radius: 10px;
+    overflow: hidden;
     .img-box{
         border-radius: 10px;
         img{
             border-radius: 10px;
         }
     }
-    .jr-card-content{
+    .jr-card-content-top{
+        padding: 20px 0;
+        border-bottom: 1px solid $color-text;
         h5{
             a{
                 font-size: 22px;
@@ -602,24 +605,55 @@
         }
     }
 }
+.ture-place-wrap{
+    overflow: hidden;
+}
 
 .tour-palace-menu{
     display: flex;
     gap: 40px;
+    white-space: nowrap;
+    transform: translateX(0);
+    transition: all 5.8s;
 
     li{
         position: relative;
 
         &::after{
-            position: relative;
+            position: absolute;
             content: "\ea6c";
             font-family: 'remixicon';
-            color: red;
+            color: $color-text;
+            top: 50%;
+            right: -25px;
+            transform: translateY(-50%);
+           
 
         }
     }
 
     .place-link{
-
+color: $color-text;
+&:hover{
+    color: $color-primary;
+}
     }
+
+    &:hover{
+        transform: translateX(-200px);
+    }
+}
+
+.jr-card-content-bottom{
+    span,small{
+        line-height: 20px;
+        font-size: 12px;
+    }
+    p{
+        font-size: 26px;
+        font-weight: 600;
+        color: $color-primary;
+        line-height: 20px;
+    }
+   
 }

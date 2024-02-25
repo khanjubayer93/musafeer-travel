@@ -1047,6 +1047,7 @@ li {
   box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.08);
   padding: 20px;
   border-radius: 10px;
+  overflow: hidden;
 }
 .jr-travel-item .img-box {
   border-radius: 10px;
@@ -1054,28 +1055,62 @@ li {
 .jr-travel-item .img-box img {
   border-radius: 10px;
 }
-.jr-travel-item .jr-card-content h5 a {
+.jr-travel-item .jr-card-content-top {
+  padding: 20px 0;
+  border-bottom: 1px solid #6a6a6a;
+}
+.jr-travel-item .jr-card-content-top h5 a {
   font-size: 22px;
   font-weight: 600;
   color: #000;
   transition: all 0.3s;
 }
-.jr-travel-item .jr-card-content h5 a:hover {
+.jr-travel-item .jr-card-content-top h5 a:hover {
   color: #63ab45;
+}
+
+.ture-place-wrap {
+  overflow: hidden;
 }
 
 .tour-palace-menu {
   display: flex;
   gap: 40px;
+  white-space: nowrap;
+  transform: translateX(0);
+  transition: all 5.8s;
 }
 .tour-palace-menu li {
   position: relative;
 }
 .tour-palace-menu li::after {
-  position: relative;
+  position: absolute;
   content: "\ea6c";
   font-family: "remixicon";
-  color: red;
+  color: #6a6a6a;
+  top: 50%;
+  right: -25px;
+  transform: translateY(-50%);
+}
+.tour-palace-menu .place-link {
+  color: #6a6a6a;
+}
+.tour-palace-menu .place-link:hover {
+  color: #63ab45;
+}
+.tour-palace-menu:hover {
+  transform: translateX(-200px);
+}
+
+.jr-card-content-bottom span, .jr-card-content-bottom small {
+  line-height: 20px;
+  font-size: 12px;
+}
+.jr-card-content-bottom p {
+  font-size: 26px;
+  font-weight: 600;
+  color: #63ab45;
+  line-height: 20px;
 }
 
 /*# sourceMappingURL=style.css.map */
