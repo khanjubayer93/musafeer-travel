@@ -10,6 +10,8 @@
     position: relative;
     overflow: hidden;
     z-index: 1;
+    display: flex;
+    gap: 5px;
 
     &::before {
         position: absolute;
